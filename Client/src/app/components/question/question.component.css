@@ -1,0 +1,42 @@
+.container{
+    width: 90vw;
+    height: auto;
+    background-image: linear-gradient(rgb(243, 243, 243), rgb(161, 228, 224));
+    margin: 2vw auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.question{
+    margin: 2vw 2vw;
+
+}
+.options {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="radio"] {
+    display: none; 
+     
+  }
+  
+  .custom-radio {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 7px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .custom-radio-2 {
+    background-color: #8dc3e2; 
+    color: white;
+    border-color: #5acce0;
+  }
+  
+  

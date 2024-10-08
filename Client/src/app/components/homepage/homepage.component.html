@@ -1,0 +1,20 @@
+<div id="containers1" [ngClass]="{'blurred': showToast}">
+  <header>Quzify</header>
+  
+  <!-- Loop through questions using *ngFor -->
+  <div *ngFor="let question of questions; let i = index">
+    <!-- Pass the question object to the app-question component -->
+    <app-question 
+      [question]="question" 
+      (optionSelected)="handleOptionSelected($event)">
+    </app-question>
+  </div>
+
+  <div class="btn">
+    <!-- Toast component to display the score -->
+    <app-toast [score]="total" #toast ></app-toast>
+    
+    <!-- Submit button for evaluating the answers -->
+    <button (click)="evaluate(); toast.displayToast()">Submit</button>
+  </div>
+</div>
